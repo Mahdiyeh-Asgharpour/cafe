@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "davat";
+    font-size: 20px;
+    font-weight: bolder;
+}
+:root{
+    --primary-color:#f6d5cd;
+    --secondary-color:#733e2c;
+    --complimentary-color:#a8f6ad;
+    --contrast-color:#edfa90;
+    --light-color:#f9be70;
+    --fifth:#84ddef;
+    
+}
+.container{
+     background: url("https://media-cdn.tripadvisor.com/media/photo-s/10/e5/73/92/photo1jpg.jpg");
+    background-position:center;
+    background-size: cover;
+    /* background-position:inherit; */
+    /* background-repeat: no-repeat; */
+    min-height: 100vh;
+    /* font-family: montserrat,sans-serif; */
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
+}
+nav a{
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    position: fixed;
+    left:0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary-color);
+}
+section{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+section:target{
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+section:target h1{
+    opacity: 0;
+    animation: 2s fadein forwards 0.5s;
+}
+#first{
+    background: var(--primary-color);
+    /* position: relative;
+    display: flex; */
+    
+   
+
+}
+#second{
+    background: var(--complimentary-color);
+}
+#third{
+    background: var(--contrast-color);
+}
+#fourth{
+    background: var(--light-color);
+}
+#fifth{
+    background: var(--fifth);
+}
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+.box{
+    height: 20em;
+    width: 10em;
+    border: 10px solid rgb(143, 75, 75);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #dec6bf;
+    margin-left: 17px;
+    
+
+}
+img{
+    width: 10em;
+    height: 10em;
+    /* border-radius: 50%; */
+}
+div h1{
+    color: black;
+}
