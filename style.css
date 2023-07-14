@@ -7,12 +7,13 @@
     font-weight: bolder;
 }
 :root{
-    --primary-color:#f6d5cd;
+     /* --primary-color:#f6d5cd; */
     --secondary-color:#733e2c;
-    --complimentary-color:#a8f6ad;
+    /* --complimentary-color:#a8f6ad;
     --contrast-color:#edfa90;
-    --light-color:#f9be70;
-    --fifth:#84ddef;
+    --light-color:#f9be70; */
+    /* --fifth:#84ddef; */
+    --sixth: url("https://media-cdn.tripadvisor.com/media/photo-s/10/e5/73/92/photo1jpg.jpg");
     
 }
 .container{
@@ -23,9 +24,10 @@
     /* background-repeat: no-repeat; */
     min-height: 100vh;
     /* font-family: montserrat,sans-serif; */
-    /* justify-content: center;
+    justify-content: center;
     text-align: center;
-    align-items: center; */
+    align-items: center;
+    padding: 10px  0 0 150px;
 }
 nav a{
     font-size: 40px;
@@ -74,24 +76,28 @@ section:target h1{
     animation: 2s fadein forwards 0.5s;
 }
 #first{
-    background: var(--primary-color);
-    /* position: relative;
-    display: flex; */
-    
+    /* background: var(--primary-color); */
    
+    background: rgb(222,198,191);
+    background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgb(228, 157, 107) 100%); 
 
 }
 #second{
-    background: var(--complimentary-color);
+  
+background: rgb(222,198,191);
+background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(228,152,0,1) 100%); 
 }
 #third{
-    background: var(--contrast-color);
+    background: rgb(222,198,191);
+    background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(238,234,116,1) 100%); 
 }
 #fourth{
-    background: var(--light-color);
+    background: rgb(222,198,191);
+    background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(252,107,5,1) 100%); 
 }
 #fifth{
-    background: var(--fifth);
+    background: rgb(222,198,191);
+background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(249,27,27,1) 100%); 
 }
 @keyframes fadein{
     100%{
@@ -117,4 +123,24 @@ img{
 }
 div h1{
     color: black;
+}
+#sixth{
+    background: var(--sixth);
+    background-position:center;
+    background-size: cover;
+}
+#contact{
+    width: 15rm;
+    height: 50rm;
+    padding: 50px;
+    border: burlywood solid 5px;
+    background-color: aliceblue;
+    display:flex;
+    color: #4a281d;
+    border-radius: 5px;
+}
+#contact img{
+    border-radius: 50%;
+    margin-right: 30px;
+
 }
