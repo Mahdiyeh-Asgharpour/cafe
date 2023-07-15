@@ -144,3 +144,64 @@ div h1{
     margin-right: 30px;
 
 }
+@media screen and (max-width:900px) {
+    .container{
+    display: block;
+       background-position:inherit; 
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+     /* height: 100vh; */
+    }
+    .box{
+        margin-bottom: 10px;
+
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    /* #sixth{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+    #contact{
+        width: 30vh;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* margin-left: 10px; */
+        padding: 0%;
+            }
+     #contact img{
+                border-radius: 50%;
+                margin-right: 0;
+                display: block;
+            
+            }
+    
+}
+@media screen and (min-width:800px ){
+    #sixth{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } 
+    #contact{
+        width: 15em;
+        height: 20em;
+        /* display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap; */
+        /* margin-left: 10px; */
+        padding: 0%;
+            }
+}
