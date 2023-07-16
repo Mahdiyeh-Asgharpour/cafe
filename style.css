@@ -144,7 +144,7 @@ div h1{
     margin-right: 30px;
 
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     .container{
     display: block;
        background-position:inherit; 
@@ -163,45 +163,40 @@ div h1{
         justify-content: flex-end;
         flex-wrap: wrap;
     }
-    /* #sixth{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    } */
+   
     #contact{
-        width: 30vh;
-        height: 80vh;
+        width: 15em;
+        height:15em;
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
-        /* margin-left: 10px; */
+
         padding: 0%;
             }
      #contact img{
                 border-radius: 50%;
                 margin-right: 0;
-                display: block;
+                display: inline-block;
+                width: 7em;
+                height: 7em;
             
             }
     
 }
-@media screen and (min-width:800px ){
+@media screen and (min-width:900px  )and (max-height:500px){
     #sixth{
         justify-content: center;
         align-items: center;
         text-align: center;
     } 
     #contact{
-        width: 15em;
-        height: 20em;
-        /* display: flex;
+        width: 25em;
+        height: 15em;
+        padding: 0%;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        justify-content: center;
-        flex-wrap: wrap; */
-        /* margin-left: 10px; */
-        padding: 0%;
             }
 }
