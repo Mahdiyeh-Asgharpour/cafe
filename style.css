@@ -6,6 +6,10 @@
     font-size: 20px;
     font-weight: bolder;
 }
+/* body{
+    overflow: hidden;
+    display: grid;
+} */
 :root{
      /* --primary-color:#f6d5cd; */
     --secondary-color:#733e2c;
@@ -151,27 +155,38 @@ div h1{
      background-repeat: no-repeat;
      background-size: cover;
      
-     /* height: 100vh; */
+     height: 400vh;
+   
     }
+    #first,#second,#third,#fourth,#fifth,#sixth{
+        
+     height: 400vh;
+    }
+   
     .box{
-        margin-bottom: 10px;
+        margin-bottom: 2em;
 
     }
+    
     section{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         flex-wrap: wrap;
     }
+    #sixth{
+        margin-top: 0;
+    }
    
     #contact{
-        width: 15em;
-        height:15em;
+        width: 13em;
+        height:35em;
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
+       
 
         padding: 0%;
             }
