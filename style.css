@@ -154,7 +154,7 @@ div h1{
        background-position:inherit; 
      background-repeat: no-repeat;
      background-size: cover;
-     
+     overflow:hidden;
      height: 400vh;
    
     }
@@ -164,7 +164,7 @@ div h1{
     }
    
     .box{
-        margin-bottom: 2em;
+        margin-bottom: 20px;
 
     }
     
@@ -180,15 +180,13 @@ div h1{
    
     #contact{
         width: 13em;
-        height:35em;
-        display: flex;
+        height:400vh;
+        display: block;
         align-items: center;
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
-       
-
-        padding: 0%;
+        /* padding: 0%; */
             }
      #contact img{
                 border-radius: 50%;
@@ -214,4 +212,37 @@ div h1{
         align-items: center;
         text-align: center;
             }
+    
+}
+
+@media  screen and (min-width:800px) and (max-width:1400px) {
+    body{
+        overflow: hidden;
+    }
+    #first,#second,#third,#fourth,#fifth{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 0;
+        
+    }
+   
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+       
+    }
+    #first,#second,#third,#fourth,#fifth,#sixth{
+        
+        height:100vh;
+       }
+      
+
+
+    
 }
