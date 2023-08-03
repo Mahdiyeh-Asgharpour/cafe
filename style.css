@@ -148,46 +148,59 @@ div h1{
     margin-right: 30px;
 
 }
-@media screen and (max-width:800px) {
+@media screen and (min-width:600px  )and (max-height:500px) {
+    img{
+        width: 6em;
+    height: 6em; 
+    }
+    .box{
+        width: 6em;
+        height: 12em;
+        
+    }
+    div h1{
+        font-size: 1em;
+    }
+    nav a{
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+    nav{
+        height: 100%;
+        margin-right: 80px;
+    }
     .container{
-    display: block;
+    /* display: block; */
        background-position:inherit; 
      background-repeat: no-repeat;
      background-size: cover;
-     overflow:hidden;
-     height: 400vh;
+     /* overflow:hidden; */
+     height: 100%;
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-evenly;
+     flex-direction: row-reverse;
+     margin-left: 10em;
    
     }
-    #first,#second,#third,#fourth,#fifth,#sixth{
-        
-     height: 400vh;
+    #first,#second,#third,#fourth,#fifth{
+        overflow:scroll;
+     height: 100%;
     }
    
-    .box{
-        margin-bottom: 20px;
-
-    }
     
-    section{
+    section:not(#sixth){
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: flex-start;
         flex-wrap: wrap;
     }
     #sixth{
-        margin-top: 0;
+        margin-top: 0px;
     }
-   
-    #contact{
-        width: 13em;
-        height:400vh;
-        display: block;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        /* padding: 0%; */
-            }
+ 
      #contact img{
                 border-radius: 50%;
                 margin-right: 0;
@@ -198,7 +211,12 @@ div h1{
             }
     
 }
-@media screen and (min-width:900px  )and (max-height:500px){
+/* 
+@media screen and (min-width:600px  )and (max-height:500px){
+    body{
+        height: 400vh;
+        
+    }
     #sixth{
         justify-content: center;
         align-items: center;
@@ -212,10 +230,13 @@ div h1{
         align-items: center;
         text-align: center;
             }
-    
-}
+    #first,#second,#third,#fourth,#fifth,#sixth{
+       
+     height: 100vh;
+    }
+}*/
 
-@media  screen and (min-width:800px) and (max-width:1400px) {
+@media  screen and (min-width:800px) and (max-width:1400px) and (orientation:portrait){
     body{
         overflow: hidden;
     }
@@ -246,3 +267,16 @@ div h1{
 
     
 }
+@media  screen and (min-width:800px) and (max-width:1400px) and (orientation:landscape){
+    body{
+        overflow: hidden;
+    }
+    #first,#second,#third,#fourth,#fifth{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 0;
+        
+    }}
