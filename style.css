@@ -261,12 +261,12 @@ div h1{
 @media screen and (min-height:600px  )and (max-width:500px) and (orientation:portrait){
     
     img{
-        width: 6em;
-        height: 6em; 
+        width: 8em;
+        height: 8em; 
     }
     .box{
-        width: 6em;
-        height: 12em;
+        width: 8em;
+        height: 16em;
         margin-left: 5em;
         margin-bottom: 2em;
        
@@ -294,15 +294,35 @@ div h1{
         align-items: flex-start;
         flex-wrap: wrap;
     }
-
     #contact img{
         border-radius: 50%;
-        margin-right: 0;
-        display: inline-block;
         width: 7em;
         height: 7em;
             
     }
     
-
+     body{
+        height: 250vh;
+        
+    }
+    #sixth{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+    } 
+    #contact{
+        width: 12.5em;
+        height: 30em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: block;
+            }
+    #first,#second,#third,#fourth,#fifth,#sixth{
+       
+     height: 350vh;
+    }
     }
