@@ -43,7 +43,7 @@ nav a{
 nav{
     position: fixed;
     left:0;
-    z-index: 50;
+    z-index:50;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -108,22 +108,91 @@ background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(249,27,27,1) 10
         opacity: 1;
     }
 }
+.box h1{
+    font-size: xx-large;
+}
 .box{
-    height: 20em;
+    height: 15em;
     width: 10em;
-    border: 10px solid rgb(143, 75, 75);
-    justify-content: center;
+    /* border: 10px solid rgb(143, 75, 75); */
+    /* justify-content: center;
     text-align: center;
-    align-items: center;
+    align-items: center; */
     background-color: #dec6bf;
-    margin-left: 17px;
-    
+    /* margin-left: 17px; */
+    /* border-radius: 10%; */
+    border-radius: 6px;
+  padding: 16px;
+  /* padding-top: 224px; */
+  /* width: 256px; */
+  overflow: hidden;
+  transform: translate(0);
+  transition: 0.6s;
+  margin: 10px;
 
 }
+.box::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: -120px;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(143, 75, 75), rgb(232, 127, 127));
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: 4s animation-div-before infinite ease-in-out;
+  }
+  
+  .box::after {
+    content: "";
+    position: absolute;
+    top: -110px;
+    right: -100px;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(79, 2, 2), rgb(143, 75, 75));
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    opacity: 0.9;
+    animation: 4s animation-div-after infinite ease-in-out;
+  }
+  
+  @keyframes animation-div-before {
+    0% {
+      top: -90px;
+      left: -120px;
+    }
+    50% {
+      top: -65px;
+      left: -130px;
+    }
+    100% {
+      top: -90px;
+      left: -120px;
+    }
+  }
+  
+  @keyframes animation-div-after {
+    0% {
+      top: -110px;
+      right: -100px;
+    }
+    50% {
+      top: -120px;
+      right: -120px;
+    }
+    100% {
+      top: -110px;
+      right: -100px;
+    }
+  }
+  
 img{
-    width: 10em;
-    height: 10em;
-    /* border-radius: 50%; */
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    
 }
 div h1{
     color: black;
@@ -154,8 +223,8 @@ div h1{
         height: 6em; 
     }
     .box{
-        width: 6em;
-        height: 12em;
+        width:8em;
+        height: 13em;
         margin-left: 5em;
         margin-bottom: 2em;
     }
@@ -252,7 +321,7 @@ div h1{
     #first,#second,#third,#fourth,#fifth{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: wrap;
         margin-top: 0;
@@ -261,8 +330,8 @@ div h1{
 @media screen and (min-height:600px  )and (max-width:500px) and (orientation:portrait){
     
     img{
-        width: 8em;
-        height: 8em; 
+        width: 6em;
+        height: 6em; 
     }
     .box{
         width: 8em;
@@ -290,7 +359,7 @@ div h1{
     section:not(#sixth){
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content:center;
         align-items: flex-start;
         flex-wrap: wrap;
     }
