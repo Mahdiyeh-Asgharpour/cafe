@@ -89,7 +89,7 @@ section:target h1{
 #second{
   
 background: rgb(222,198,191);
-background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(228,152,0,1) 100%); 
+background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgb(127, 108, 69) 100%); 
 }
 #third{
     background: rgb(222,198,191);
@@ -97,11 +97,11 @@ background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(228,152,0,1) 10
 }
 #fourth{
     background: rgb(222,198,191);
-    background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(252,107,5,1) 100%); 
+    background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgb(249, 179, 128) 100%); 
 }
 #fifth{
     background: rgb(222,198,191);
-background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(249,27,27,1) 100%); 
+background: linear-gradient(247deg,  rgb(180, 129, 129) 100%,rgba(222,198,191,1) 0%); 
 }
 @keyframes fadein{
     100%{
@@ -157,6 +157,32 @@ background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgba(249,27,27,1) 10
     opacity: 0.9;
     animation: 4s animation-div-after infinite ease-in-out;
   }
+  /* .box:nth-child(2n+1)::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: -120px;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(79, 2, 2), rgb(143, 75, 75));
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    animation: 4s animation-div-before infinite ease-in-out;
+  }
+  
+  .box:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    top: -110px;
+    right: -100px;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(143, 75, 75), rgb(232, 127, 127));
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    opacity: 0.9;
+    animation: 4s animation-div-after infinite ease-in-out;
+  } */
   
   @keyframes animation-div-before {
     0% {
