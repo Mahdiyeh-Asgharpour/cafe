@@ -6,17 +6,9 @@
     font-size: 20px;
     font-weight: bolder;
 }
-/* body{
-    overflow: hidden;
-    display: grid;
-} */
+
 :root{
-     /* --primary-color:#f6d5cd; */
     --secondary-color:#733e2c;
-    /* --complimentary-color:#a8f6ad;
-    --contrast-color:#edfa90;
-    --light-color:#f9be70; */
-    /* --fifth:#84ddef; */
     --sixth: url("https://media-cdn.tripadvisor.com/media/photo-s/10/e5/73/92/photo1jpg.jpg");
     
 }
@@ -24,10 +16,9 @@
      background: url("https://media-cdn.tripadvisor.com/media/photo-s/10/e5/73/92/photo1jpg.jpg");
     background-position:center;
     background-size: cover;
-    /* background-position:inherit; */
-    /* background-repeat: no-repeat; */
+    
     min-height: 100vh;
-    /* font-family: montserrat,sans-serif; */
+    
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -80,7 +71,6 @@ section:target h1{
     animation: 2s fadein forwards 0.5s;
 }
 #first{
-    /* background: var(--primary-color); */
    
     background: rgb(222,198,191);
     background: linear-gradient(247deg, rgba(222,198,191,1) 0%, rgb(228, 157, 107) 100%); 
@@ -114,17 +104,9 @@ background: linear-gradient(247deg,  rgb(180, 129, 129) 100%,rgba(222,198,191,1)
 .box{
     height: 15em;
     width: 10em;
-    /* border: 10px solid rgb(143, 75, 75); */
-    /* justify-content: center;
-    text-align: center;
-    align-items: center; */
     background-color: #dec6bf;
-    /* margin-left: 17px; */
-    /* border-radius: 10%; */
     border-radius: 6px;
   padding: 16px;
-  /* padding-top: 224px; */
-  /* width: 256px; */
   overflow: hidden;
   transform: translate(0);
   transition: 0.6s;
@@ -268,11 +250,9 @@ div h1{
        
     }
     .container{
-    /* display: block; */
        background-position:inherit; 
      background-repeat: no-repeat;
      background-size: cover;
-     /* overflow:hidden; */
      height: 100%;
      display: flex;
      align-items: flex-start;
